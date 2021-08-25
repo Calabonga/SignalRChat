@@ -3,7 +3,7 @@
 Микросервисная система с сервисом авторизации (IdentityServer4) и сервисов чата для реализации обмена сообщениями в real-time.
 
 Клиенты для чата реализованы (или почти реализованы) на разных платформах:
-1. ConsoleApp
-2. WPF
-3. JavaScript (SPA)
-4. WinForm
+1. [x] ConsoleApp
+2. [ ] WPF
+3. [ ] JavaScript (SPA)
+4. [ ] WinForm
