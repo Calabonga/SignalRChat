@@ -6,4 +6,4 @@
 1. [x] ConsoleApp
 2. [x] WPF
 3. [ ] JavaScript (SPA)
-4. [ ] WinForm
+4. [x] WinForm
