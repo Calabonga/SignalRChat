@@ -38,7 +38,7 @@ namespace Calabonga.Chat.ConsoleClient.TokenHelper
                 new("password", password),
                 new("client_secret", "secret"),
                 new("client_id", "microservice1"),
-                new("scope", "api1"),
+                new("scope", "api1")
             };
 
             return new FormUrlEncodedContent(values);

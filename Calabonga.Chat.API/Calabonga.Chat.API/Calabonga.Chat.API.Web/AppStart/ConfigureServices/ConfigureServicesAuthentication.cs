@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System.Threading.Tasks;
 
 namespace Calabonga.Chat.API.Web.AppStart.ConfigureServices
 {
@@ -31,6 +32,21 @@ namespace Calabonga.Chat.API.Web.AppStart.ConfigureServices
                 })
                 .AddIdentityServerAuthentication(options =>
                 {
+                    options.Events = new JwtBearerEvents
+                    {
+                        OnMessageReceived = context => 
+                        {
+                            var accessToken = context.Request.Query["access_token"];
+
+                            var path = context.HttpContext.Request.Path;
+                            if (!string.IsNullOrEmpty(accessToken) && path.StartsWithSegments("/chat"))
+                            {
+                                context.Token = accessToken;
+                            }
+                
+                            return Task.CompletedTask;
+                        }
+                    };
                     options.SupportedTokens = SupportedTokens.Jwt;
                     options.Authority = $"{url}";
                     options.EnableCaching = true;

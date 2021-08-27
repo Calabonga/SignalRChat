@@ -2,7 +2,6 @@ using Calabonga.Chat.AuthServer.Web.AppStart.Configures;
 using Calabonga.Chat.AuthServer.Web.AppStart.ConfigureServices;
 using Calabonga.Chat.AuthServer.Web.Infrastructure.DependencyInjection;
 using Calabonga.UnitOfWork.Controllers.DependencyContainer;
-
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
