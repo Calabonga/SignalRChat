@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Index</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body class="container">
+    <h1>SignalR Chat JavaScript Client</h1>
+    <p class="lead">This plain javascript client implementation for demo purposes only. It showing how to SignalR works. Please see more examples on <a href="https://github.com/Calabonga/SignalRChat">github.com</a>. You can also ask a question on my <a href="https://www.calabonga.net">blog</a> using feedback form.</p>
+    <div class="row">
+        <div class="col">
+            <h2>Log In</h2>
+
+            <form id="identity-form">
+                <div class="mb-3">
+                    <label for="userName" class="form-label">UserName</label>
+                    <input type="text" class="form-control" id="userName" value="user2@yopmail.com">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" value="123qwe!@#">
+                </div>
+
+                <button id="login" type="button" class="btn btn-secondary">GetToken</button>
+            </form>
+            <div class="mt-3">
+
+                <div id="token" class="text-break">
+                    no token
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Messages</h2>
+            <form id="send-form" class="invisible">
+                <div class="mb-3">
+                    <label for="messageText" class="form-label">Message text:</label>
+                    <input type="text" class="form-control" id="messageText" value="This is message from JavaScript client">
+                </div>
+                <button id="send" type="button" class="btn btn-primary">Send</button>
+            </form>
+            <div>
+                <ul id="messageList"></ul>
+            </div>
+        </div>
+        <div class="col">
+            <h2>Users</h2>
+            <div class="btn-group invisible" role="group" id="userToolbar">
+                <button id="connect" type="button" class="btn btn-success">Connect</button>
+                <button id="disconnect" type="button" class="btn btn-danger" disabled>Disconnect</button>
+            </div>
+            <div id="userList">
+            </div>
+        </div>
+
+    </div>
+    <script src="microsoft-signalr/signalr.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
