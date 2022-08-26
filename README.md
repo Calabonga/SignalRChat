@@ -9,3 +9,15 @@
 2. [x] [WPF](https://youtu.be/qxFF4wY2y9Q)
 3. [x] [JavaScript (SPA)](https://youtu.be/vZnq7KHe1SQ)
 4. [x] [WinForm](https://youtu.be/a92UbvvrbVY)
+
+## Комментарии, пожелания, замечания
+
+Пишите комментарии к видео на сайте [www.calabonga.net](https://www.calabonga.net)
+
+# Автор
+
+Сергей Калабонга (Calabonga)
+
+![Author](https://www.calabonga.net/images/Calabonga.gif)
+
+[Блог по программированию](https://www.calabonga.net)
